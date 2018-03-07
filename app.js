@@ -1,12 +1,9 @@
 var arr = ["John","Gotti","Says","Hello!"];
 var string = "Goodbye!";
+var randomP = document.getElementById("random");
 
 arr.pop();
 arr.push(string);
-
-var created = document.createElement("div");
-created.id = "fourth";
-document.body.appendChild(created);
 
 for(var i=0; i < arr.length; i++) {
   var temp = document.createElement("p");
@@ -24,4 +21,8 @@ for(var key in obj) {
   var temp2 = document.createElement("p");
   temp2.innerHTML = obj[key];
   document.getElementById("fourth").appendChild(temp2);
+}
+
+function random() {
+  randomP.innerHTML = arr[Math.floor(Math.random() * (arr.length))]
 }
