@@ -22,6 +22,7 @@ body {
   text-align: center;
   animation-name: LGBT2;
   animation-duration: 25s;
+  animation-iteration-count: infinite;
   font-size: 2em;
 }
 
@@ -36,6 +37,7 @@ body {
   padding: 2%;
   font-size: 42px;
   animation-name: LGBT;
+  animation-iteration-count: infinite;
   animation-duration: 30s;
 }
 
